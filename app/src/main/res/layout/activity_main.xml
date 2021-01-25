@@ -5,6 +5,7 @@
     android:id="@+id/screen"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#323232"
     tools:context=".MainActivity">
 
     <com.github.matteobattilana.weather.WeatherView
@@ -17,18 +18,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="cursive"
         android:text="Weather"
         android:textColor="@color/white"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btnChange"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tvWeather"
+        android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
         android:text="Change Weather" />
 
 </RelativeLayout>
